@@ -16,9 +16,11 @@ export default {
 function scrollIntoView(ref, scrollIntoViewOptions) {
   if (typeof window === 'undefined') return; // SSR
 
+  let scope = this.$el;
+
   let element;
-  if (typeof ref === 'string') element = document.querySelector(ref);
-  else if (typeof ref === 'object' && ref.$el) element = ref.$el;
+  if (typeof ref === 'string') element = scope.querySelector(ref); // Selector
+  else if (typeof ref === 'object' && ref.$el) element = ref.$el; // VNode
   else element = ref;
 
   if (element instanceof HTMLElement) {
