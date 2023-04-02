@@ -2,7 +2,7 @@
   "version": "0.0.0",
   "name": "vue-plugin-scroll-into-view",
   "nameFull": "VuePluginScrollIntoView",
-  "description": "A vue-plugin-scroll-into-view library",
+  "description": "A lightweight Vue.js plugin that allows you to scroll an element into view with just a single line of code.",
   "license": "MIT",
   "author": "victornpb",
   "keywords": [

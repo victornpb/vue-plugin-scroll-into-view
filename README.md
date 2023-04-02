@@ -20,18 +20,51 @@
 <!-- endbadge -->
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat non enim ultricies cursus. Nullam quis tortor vel ex aliquet luctus. Aliquam erat volutpat. Donec quis libero lacus. Fusce quis leo vitae purus convallis luctus sed a ex. Phasellus vel mauris in ante bibendum efficitur. Nunc eget dictum purus. Proin vel lectus euismod, blandit nunc in, aliquam quam.
+**vue-scroll-into-view** is a simple Vue.js plugin that provides a convenient way to scroll an element into view with just a single line of code. Whether you have a long page with many sections, or you need to navigate to a specific part of the page, this plugin makes it easy to do so.
+
+# Features
+
+Scrolls an element into the visible area of the browser window
+Supports scrolling to an element by `$refs`, `selector`, `VNode`, or `HTMLElement`
+Allows for customization of scroll options, such as animation and alignment
+Easy to install and use in your Vue.js 2 or 3 project
+
+
 
 # Usage Examples
 Inside your code you can do something like this:
 
 ## Basic usage
-```js
-import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
+```html
+<template>
+  <div>
+    <h1>Hello World</h1>
 
-// us
-vuePluginScrollIntoView();
+    <table ref="table">
+      <!-- long content -->
+    </table>
+
+    <button @click="nextPage"> Next </button>
+
+  </div>
+</template>
+<script>
+export default {
+  methods: {
+    nextPage() {
+
+      // await requestNextPage();
+      
+      // scroll to top of the table
+      this.$scrollIntoView(this.$refs.table); // refs or VNodes
+      
+      this.$scrollIntoView('div > table'); // CSS Selectors
+    },
+  }
+}
+</script>
 ```
+
 
 # Installation
 
@@ -48,34 +81,32 @@ yarn add --dev vue-plugin-scroll-into-view
 
 #### index.js
 ```js
-import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
+import Vue from 'vue';
+import VueScrollIntoView from 'vue-plugin-scroll-into-view';
 
-// setup
-import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
-
-fobar.init({options});
+Vue.use(VueScrollIntoView);
 ```
 
 ## Options
 
-vuePluginScrollIntoView(variables, options)
+this.$scrollIntoView(ref, options);
 
-| Parameters  | Description           | Type    | Default Value |
-|-------------|-----------------------|---------|---------------|
-| `foo`       | This is the foo thing | object  | `{}`          |
-| `enable`    | Enable the thing      | boolean | `true`        |
-| `options.x` | The X value           | number  | `1.0`         |
-| `options.y` | The X value           | number  | `2.0`         |
-| `options.z` | The X value           | number  | `3.0`         |
-
+| Option                     | Type    | Description                                                                      | Default value |
+|----------------------------|---------|----------------------------------------------------------------------------------|---------------|
+| behavior                   | String  | Defines the transition animation. One of "auto" or "smooth".                     | "auto"        |
+| block                      | String  | Defines vertical alignment. One of "start", "center", "end", or "nearest".       | "start"       |
+| inline                     | String  | Defines horizontal alignment. One of "start", "center", "end", or "nearest".     | "nearest"     |
+| scrollMode                 | String  | Defines the scrolling mode. One of "always", "if-needed", or "never".            | "always"      |
+| skipOverflowHiddenElements | Boolean | Whether to skip scrolling the ancestor elements with overflow: hidden.           | false         |
+| allowHorizontalScroll      | Boolean | Whether to allow horizontal scrolling if the element is wider than the viewport. | false         |
+| force                      | Boolean | Whether to always scroll the element, even if it's already in view.              | false         |
 
 ### Options example
-```js
-import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
 
-fobar.init({
-  enable: true,
-});
+This will scroll the element with the ID my-section into view with default scroll options. You can also pass in custom scroll options if desired:
+
+```js
+this.$scrollIntoView('#my-section', { behavior: 'smooth', block: 'center' });
 ```
 
 ## License
