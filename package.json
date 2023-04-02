@@ -1,21 +1,26 @@
 {
   "version": "0.0.0",
-  "name": "foo-bar",
-  "nameFull": "FooBar",
-  "description": "A foo-bar library",
+  "name": "vue-plugin-scroll-into-view",
+  "nameFull": "VuePluginScrollIntoView",
+  "description": "A vue-plugin-scroll-into-view library",
   "license": "MIT",
-  "author": "username",
+  "author": "victornpb",
   "keywords": [
-    "foo",
-    "bar"
+    "vue",
+    "vuejs",
+    "plugin",
+    "scroll",
+    "scrollIntoView",
+    "scrollTo",
+    "focus"
   ],
-  "homepage": "https://github.com/username/foo-bar",
+  "homepage": "https://github.com/victornpb/vue-plugin-scroll-into-view",
   "bugs": {
-    "url": "https://github.com/username/foo-bar/issues"
+    "url": "https://github.com/victornpb/vue-plugin-scroll-into-view/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/foo-bar.git"
+    "url": "git+https://github.com/victornpb/vue-plugin-scroll-into-view.git"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -29,13 +34,13 @@
     "watch": "rollup -c -w"
   },
   "sideEffects": false,
-  "globalVar": "FooBar",
-  "main": "dist/foo-bar.cjs.js",
-  "unpkg": "dist/foo-bar.js",
-  "module": "dist/foo-bar.esm.js",
+  "globalVar": "vuePluginScrollIntoView",
+  "main": "dist/vue-plugin-scroll-into-view.cjs.js",
+  "unpkg": "dist/vue-plugin-scroll-into-view.js",
+  "module": "dist/vue-plugin-scroll-into-view.esm.js",
   "exports": {
-    "import": "./dist/foo-bar.mjs",
-    "require": "./dist/foo-bar.cjs.js"
+    "import": "./dist/vue-plugin-scroll-into-view.mjs",
+    "require": "./dist/vue-plugin-scroll-into-view.cjs.js"
   },
   "files": [
     "dist"

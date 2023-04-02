@@ -1,22 +1,22 @@
-# foo-bar
+# vue-plugin-scroll-into-view
 <!-- badge -->
-[![LICENSE](https://img.shields.io/github/license/username/foo-bar?style=flat-square)](LICENSE)
-[![Node](https://img.shields.io/node/v/foo-bar.svg?style=flat-square)](package.json)
-[![CodeFactor](https://www.codefactor.io/repository/github/username/foo-bar/badge?style=flat-square)](https://www.codefactor.io/repository/github/username/foo-bar)
+[![LICENSE](https://img.shields.io/github/license/victornpb/vue-plugin-scroll-into-view?style=flat-square)](LICENSE)
+[![Node](https://img.shields.io/node/v/vue-plugin-scroll-into-view.svg?style=flat-square)](package.json)
+[![CodeFactor](https://www.codefactor.io/repository/github/victornpb/vue-plugin-scroll-into-view/badge?style=flat-square)](https://www.codefactor.io/repository/github/victornpb/vue-plugin-scroll-into-view)
 
-[![Coverage Status](https://img.shields.io/coveralls/username/foo-bar.svg?style=flat-square)](https://coveralls.io/github/username/foo-bar)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/username/foo-bar?style=flat-square)
+[![Coverage Status](https://img.shields.io/coveralls/victornpb/vue-plugin-scroll-into-view.svg?style=flat-square)](https://coveralls.io/github/victornpb/vue-plugin-scroll-into-view)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/victornpb/vue-plugin-scroll-into-view?style=flat-square)
 
-[![Version](https://img.shields.io/npm/v/foo-bar.svg?style=flat-square)](https://www.npmjs.com/package/foo-bar)
-[![Downloads](https://img.shields.io/npm/dt/foo-bar.svg?style=flat-square)](https://www.npmjs.com/package/foo-bar)
-[![](https://img.shields.io/bundlephobia/minzip/foo-bar?style=flat-square)](https://www.npmjs.com/package/foo-bar)
-[![](https://img.shields.io/tokei/lines/github/username/foo-bar?style=flat-square)](https://www.npmjs.com/package/foo-bar)
+[![Version](https://img.shields.io/npm/v/vue-plugin-scroll-into-view.svg?style=flat-square)](https://www.npmjs.com/package/vue-plugin-scroll-into-view)
+[![Downloads](https://img.shields.io/npm/dt/vue-plugin-scroll-into-view.svg?style=flat-square)](https://www.npmjs.com/package/vue-plugin-scroll-into-view)
+[![](https://img.shields.io/bundlephobia/minzip/vue-plugin-scroll-into-view?style=flat-square)](https://www.npmjs.com/package/vue-plugin-scroll-into-view)
+[![](https://img.shields.io/tokei/lines/github/victornpb/vue-plugin-scroll-into-view?style=flat-square)](https://www.npmjs.com/package/vue-plugin-scroll-into-view)
 
-[![GitHub Stars](https://img.shields.io/github/stars/username/foo-bar?style=flat-square)](https://github.com/username/foo-bar/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/username/foo-bar?style=flat-square)](https://github.com/username/foo-bar/network/members)
-[![GitHub Discussions](https://img.shields.io/github/discussions/username/foo-bar?style=flat-square)](https://github.com/username/foo-bar/discussions)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/username/foo-bar?style=flat-square&color=green)](https://github.com/username/foo-bar/pulls?q=is%3Apr+is%3Aclosed)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/username/foo-bar?style=flat-square&color=green)](https://github.com/username/foo-bar/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub Stars](https://img.shields.io/github/stars/victornpb/vue-plugin-scroll-into-view?style=flat-square)](https://github.com/victornpb/vue-plugin-scroll-into-view/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/victornpb/vue-plugin-scroll-into-view?style=flat-square)](https://github.com/victornpb/vue-plugin-scroll-into-view/network/members)
+[![GitHub Discussions](https://img.shields.io/github/discussions/victornpb/vue-plugin-scroll-into-view?style=flat-square)](https://github.com/victornpb/vue-plugin-scroll-into-view/discussions)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/victornpb/vue-plugin-scroll-into-view?style=flat-square&color=green)](https://github.com/victornpb/vue-plugin-scroll-into-view/pulls?q=is%3Apr+is%3Aclosed)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/victornpb/vue-plugin-scroll-into-view?style=flat-square&color=green)](https://github.com/victornpb/vue-plugin-scroll-into-view/issues?q=is%3Aissue+is%3Aclosed)
 <!-- endbadge -->
 
 
@@ -27,38 +27,38 @@ Inside your code you can do something like this:
 
 ## Basic usage
 ```js
-import FooBar from 'foo-bar';
+import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
 
 // us
-FooBar();
+vuePluginScrollIntoView();
 ```
 
 # Installation
 
-## [NPM](https://npmjs.com/package/foo-bar)
+## [NPM](https://npmjs.com/package/vue-plugin-scroll-into-view)
 ```sh
-npm install foo-bar
+npm install vue-plugin-scroll-into-view
 ```
 ## [Yarn](https://github.com/yarnpkg/yarn)
 ```sh
-yarn add --dev foo-bar
+yarn add --dev vue-plugin-scroll-into-view
 ```
 
 # Adding to your project
 
 #### index.js
 ```js
-import fooBar from 'foo-bar';
+import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
 
 // setup
-import foobar from 'foo-bar';
+import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
 
 fobar.init({options});
 ```
 
 ## Options
 
-foobar(variables, options)
+vuePluginScrollIntoView(variables, options)
 
 | Parameters  | Description           | Type    | Default Value |
 |-------------|-----------------------|---------|---------------|
@@ -71,7 +71,7 @@ foobar(variables, options)
 
 ### Options example
 ```js
-import foobar from 'foo-bar';
+import vuePluginScrollIntoView from 'vue-plugin-scroll-into-view';
 
 fobar.init({
   enable: true,

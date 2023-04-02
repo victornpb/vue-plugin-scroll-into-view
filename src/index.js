@@ -1,15 +1,2 @@
-import sum from './utils/sum';
-
-export default class FooBar {
-  str = 'Hello World';
-  #p = 1;
-  constructor() {
-    console.log('FooBar' + this.str + this.#p);
-  }
-  sum(a, b) {
-    return sum(a, b);
-  }
-  #bar(x) {
-    return x ?? 69;
-  }
-}
+import scrollIntoView from './scrollIntoView';
+export default scrollIntoView;
