@@ -19,6 +19,7 @@
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/victornpb/vue-plugin-scroll-into-view?style=flat-square&color=green)](https://github.com/victornpb/vue-plugin-scroll-into-view/issues?q=is%3Aissue+is%3Aclosed)
 <!-- endbadge -->
 
+![scroll-into-view](https://user-images.githubusercontent.com/3372598/229327593-f7ca0cba-f15b-4a6e-893c-1d949bd2d0c0.jpg)
 
 **vue-scroll-into-view** is a simple Vue.js plugin that provides a convenient way to scroll an element into view with just a single line of code. Whether you have a long page with many sections, or you need to navigate to a specific part of the page, this plugin makes it easy to do so.
 
